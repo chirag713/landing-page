@@ -98,6 +98,11 @@ body {
     padding-bottom: 30px;
 }
 
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
 .about .heading:hover {
     font-size: 44px;
     padding-bottom: 26px;
