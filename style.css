@@ -1,8 +1,17 @@
 @import url("http://fonts.googleapis.com/css??family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 body {
@@ -38,6 +47,11 @@ body {
 #header #mobile a img {
     width: 30px;
     /* padding-top: 20px; */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
 }
 
 #navbar {
@@ -98,11 +112,6 @@ body {
     padding-bottom: 30px;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-}
-
 .about .heading:hover {
     font-size: 44px;
     padding-bottom: 26px;
@@ -120,7 +129,6 @@ body {
 .about .content1:hover {
     cursor: pointer;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
 }
 
 .about .content1 .para1 {
@@ -132,17 +140,53 @@ body {
     display: flex;
 }
 
-.links1 {
+.links p{
+    font-size: 27px;
+}
+
+.links1 a {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 50px;
+    text-decoration: none;
 }
 
-.links2 {
+.links2 a {
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+}
+
+/* .links1 a img{
+    width: 70px;
+    height: 70px;
+} */
+
+.links a img{
+    padding-bottom: 10px;
+}
+
+.links2 p{
+    padding-left: 10px;
+}
+
+.links1 a img:hover{
+    width: 80px;
+    height: 80px;
+    padding-bottom: 2px;
+}
+
+.links2 a img:hover{
+    width: 70px;
+    height: 70px;
+    padding-bottom: 2px;
+}
+
+.links a p:hover{
+    font-size: 32px;
 }
 
 .fs-44 {
@@ -324,14 +368,14 @@ body {
     .fs-44 {
         font-size: 32px;
     }
+
     .fs-44:hover {
         padding-bottom: 8px;
         font-size: 34px;
     }
 }
 
-@media (max-width: 550px) {
-
+@media (max-width: 500px) {
     .servicesflex .content1 p.para1 {
         font-size: 20px;
     }
@@ -348,6 +392,7 @@ body {
     .fs-44 {
         font-size: 28px;
     }
+
     .fs-44:hover {
         padding-bottom: 8px;
         font-size: 30px;
@@ -358,14 +403,27 @@ body {
     font-size: 3em;
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
+}
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
     .fs-44 {
-        font-size: 24px;
+        font-size: 22px;
     }
+
     .fs-44:hover {
         padding-bottom: 8px;
-        font-size: 26px;
+        font-size: 24px;
+    }
+
+    .links img{
+        width: 30px;
+    }
+
+    .links p{
+        font-size: 22px;
+    }
+
+    .links2 a{
+        padding-top: 3px;
     }
 }
