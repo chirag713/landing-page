@@ -16,6 +16,7 @@
 
 body {
     background-color: rgb(238, 229, 229);
+    /* background-color: wheat; */
 }
 
 #header {
@@ -97,7 +98,68 @@ body {
     left: 20px;
 }
 
+.front {
+    display: flex;
+    background-color: rgb(230, 220, 220);
+    height: 80vh;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.front img {
+    width: 20vw;
+}
+
+.main {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* justify-content: center; */
+    background-color: rgb(230, 220, 220);
+   
+    justify-content: center;
+}
+
+.firsttext {
+    padding-top: 10px;
+    font-size: 4vw;
+    padding-left: 10vw;
+    padding-bottom: 20px;
+    font-family: cursive;
+    color: red;
+}
+
+.secondtext {
+    font-size: 2.5vw;
+    padding-left: 20vw;
+    padding-bottom: 20px;
+    font-family: cursive;
+    color: blue;
+}
+
+.thirdtext {
+    font-size: 2vw;
+    padding-left: 30vw;
+    padding-bottom: 20px;
+    font-family: cursive;
+    color: yellowgreen;
+}
+
+.forthtext {
+    font-size: 2vw;
+    padding-left: 25vw;
+    padding-bottom: 20px;
+    font-family: cursive;
+    color: yellowgreen;
+}
+
 .about {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +202,7 @@ body {
     display: flex;
 }
 
-.links p{
+.links p {
     font-size: 27px;
 }
 
@@ -160,32 +222,27 @@ body {
     text-decoration: none;
 }
 
-/* .links1 a img{
-    width: 70px;
-    height: 70px;
-} */
-
-.links a img{
+.links a img {
     padding-bottom: 10px;
 }
 
-.links2 p{
+.links2 p {
     padding-left: 10px;
 }
 
-.links1 a img:hover{
+.links1 a img:hover {
     width: 80px;
     height: 80px;
     padding-bottom: 2px;
 }
 
-.links2 a img:hover{
+.links2 a img:hover {
     width: 70px;
     height: 70px;
     padding-bottom: 2px;
 }
 
-.links a p:hover{
+.links a p:hover {
     font-size: 32px;
 }
 
@@ -197,6 +254,40 @@ body {
 .fs-44:hover {
     padding-bottom: 8px;
     font-size: 46px;
+}
+
+.service-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: rgb(230, 220, 220);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(45% - 20px);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .web {
@@ -293,20 +384,40 @@ body {
     color: red;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+footer .copyright {
+    margin: 0;
+}
+
+@media (max-width: 1100px) {
+    .service {
+        font-size: 28px;
+    }
+}
+
 
 @media (max-width: 1000px) {
     .servicesflex {
         flex-direction: column;
     }
 
+    .service {
+        font-size: 22px;
+    }
+
     .servicesflex .img1 {
         margin-bottom: 20px;
     }
-
-
 }
 
-@media (max-width: 799px) {
+@media (max-width: 800px) {
     #navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -348,10 +459,38 @@ body {
         color: #222;
         display: initial;
     }
+
+    .front{
+        flex-direction: column-reverse;
+        height: 80vh;
+    }
+
+    .main{
+        height: 50vh;
+    }
+
+    .front .image img{
+        width: 30vw;
+    }
+
+
+    .firsttext {
+        font-size: 4.5vw;
+    }
+    
+    .secondtext {
+        font-size: 3vw;
+    }
+    
+    .thirdtext {
+        font-size: 2.5vw;
+    }
+    
+    .forthtext {
+        font-size: 2.5vw;
+    }
+
 }
-
-
-
 
 @media (max-width: 650px) {
     .fs-44 {
@@ -373,11 +512,26 @@ body {
         padding-bottom: 8px;
         font-size: 34px;
     }
+
+    .services1 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service {
+        width: 90vw;
+    }
 }
 
 @media (max-width: 500px) {
     .servicesflex .content1 p.para1 {
         font-size: 20px;
+    }
+
+    .front{
+        height: 60vh;
     }
 }
 
@@ -415,15 +569,15 @@ body {
         font-size: 24px;
     }
 
-    .links img{
+    .links img {
         width: 30px;
     }
 
-    .links p{
+    .links p {
         font-size: 22px;
     }
 
-    .links2 a{
+    .links2 a {
         padding-top: 3px;
     }
 }
