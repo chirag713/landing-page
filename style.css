@@ -546,6 +546,7 @@ footer .copyright {
 
     .front .image img{
         width: 50vw;
+        margin-left: 30vw;
     }
 
     .firsttext {
@@ -595,12 +596,24 @@ footer .copyright {
         font-size: 24px;
     }
 
-    .links img {
-        width: 11vw;
+    .links{
+        flex-direction: column;
+    }
+
+    .links a img {
+        width: 15vw;
+        padding-bottom: 0px;
+    }
+    .links1 a{
+        padding-right: 0px;
+    }
+
+    .links2 a img{
+        width: 13vw;
     }
 
     .links p {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .links2 a {
