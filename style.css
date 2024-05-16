@@ -146,7 +146,7 @@ body {
     padding-left: 30vw;
     padding-bottom: 20px;
     font-family: cursive;
-    color: yellowgreen;
+    color: purple;
 }
 
 .forthtext {
@@ -154,7 +154,7 @@ body {
     padding-left: 25vw;
     padding-bottom: 20px;
     font-family: cursive;
-    color: yellowgreen;
+    color: purple;
 }
 
 .about {
@@ -592,8 +592,8 @@ footer .copyright {
     }
 
     .fs-44:hover {
-        padding-bottom: 8px;
         font-size: 22px;
+        padding-bottom: 10px;
     }
 
     .links{
